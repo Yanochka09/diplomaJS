@@ -1,13 +1,9 @@
-const сalorieCounter = () => {
-    return document.querySelectorAll(".radio");
-}
+const counterElements = document.querySelectorAll('.counter');
 
-console.log(сalorieCounter());
+counterElements.forEach(elem => {
+  const counter = new calCounter(elem);
+  counter.init();
+});
 
-const isDisabled = () => {
-	return button.hasAttribute("disabled");
-}
-
-
-console.log(isDisabled()); // 
+import calCounter from './modul/calCounter.js';
 
